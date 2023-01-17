@@ -20,6 +20,7 @@
                 border: 1px dashed red;
                 width: 200px;
                 height: 200px;
+                text-align: center;
             }
 
             body {
@@ -31,7 +32,15 @@
         <div class="cards-container">
             @foreach($movies as $movie)
             <div class="cards">
-
+            {{$movie->title}}
+            <br>
+            {{$movie->original_title}}
+            <br>
+            {{$movie->nationality}}
+            <br>
+            {{$movie->date}}
+            <br>
+            {{$movie->vote}}
             </div>
             @endforeach
         </div>
